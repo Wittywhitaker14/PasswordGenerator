@@ -21,7 +21,6 @@ generateBtn.addEventListener("click", function() {
    
     var symbol= confirm("Would you like symbols?");
     console.log(symbol);
-
 });
 
 function writePassword() {
