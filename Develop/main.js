@@ -52,6 +52,9 @@ generateBtn.addEventListener("click", function() {
         var typesArray= [{upper}, {lower}, {number}, {symbol}].filter
         (item => Object.values(item)[0]);
         console.log("typesArray: ", typesArray);
+        if(typesCount === 0){
+            return '';
+        }
 
     } else{
         alert("Please choose a number between 8 and 128. Please click 'Generate Password' again.")
