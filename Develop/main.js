@@ -1,5 +1,5 @@
 
-// Assignment code here
+// Generate Random Charaters Functions
 function getUppercase(){
     return String.fromCharCode(Math.floor(Math.random() *26) + 65);
 }
@@ -24,7 +24,7 @@ var Functions = {
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Generate Function btn with prompts
 
 generateBtn.addEventListener("click", function() {
     var length = prompt("How many characters would you like your password to be? Min:8 and Max:128")
@@ -32,11 +32,10 @@ generateBtn.addEventListener("click", function() {
     if(length>=8 && length<=128){
        
         var upper= confirm("Would you like uppercase letters?")
-            // console.log(upper)
             if(upper === 'true'){
                 getUppercase();
             } else {''};
-            console.log(upper)
+            // console.log(upper)
             
         var lower= confirm("Would you like lowercase letters?")
             if(lower === 'true'){
@@ -53,18 +52,22 @@ generateBtn.addEventListener("click", function() {
                 getSymbol();
             } else{''};
             
-        } else{
+    } else{
             alert("Please choose a number between 8 and 128. Please click 'Generate Password' again.");
         };
+        
         password = generatePassword(
             upper, lower, number, symbol, length
 
-            );
+        );
+
         var passwordText = document.querySelector("#password");
 
         passwordText.value = password;
 
         // console.log(+length.value, getUppercase(), getLowercase(), getNumber(), getSymbol());    
+
+        // Generate Password Function getting the values
         
         function generatePassword(upper, lower, number, symbol, length){
             
@@ -94,4 +97,4 @@ generateBtn.addEventListener("click", function() {
             return finalPassword;
         }
         
-    });
+});
