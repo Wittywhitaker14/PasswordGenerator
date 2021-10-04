@@ -1,0 +1,23 @@
+{
+  "name": "PasswordGenerator",
+  "version": "1.0.0",
+  "description": "## User Story",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d Develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wittywhitaker14/PasswordGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wittywhitaker14/PasswordGenerator/issues"
+  },
+  "homepage": "https://github.com/Wittywhitaker14/PasswordGenerator#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
