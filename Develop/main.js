@@ -36,6 +36,7 @@ generateBtn.addEventListener("click", function() {
             if(upper === 'true'){
                 getUppercase();
             } else {''};
+            console.log(upper)
             
         var lower= confirm("Would you like lowercase letters?")
             if(lower === 'true'){
@@ -65,7 +66,7 @@ generateBtn.addEventListener("click", function() {
 
         // console.log(+length.value, getUppercase(), getLowercase(), getNumber(), getSymbol());    
         
-        function generatePassword(lower, upper, number, symbol, length){
+        function generatePassword(upper, lower, number, symbol, length){
             
             var generatePassword = '';
             
